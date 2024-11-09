@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vako Boyz Official Site</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .suggestions, .upcoming, .members-only {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .suggestions form, .members-only form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea, button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to The Vako Boyz Official Site</h1>
+    <nav>
+        <a href="#suggestions">Movie Suggestions</a>
+        <a href="#upcoming">Upcoming Movies</a>
+        <a href="#members-only">Members-Only Content</a>
+    </nav>
+</header>
+
+<div class="container">
+    <!-- Movie Suggestions Section -->
+    <section id="suggestions" class="suggestions">
+        <h2>Suggest a Movie</h2>
+        <form action="#" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="movie">Movie Suggestion</label>
+            <textarea id="movie" name="movie" rows="4" required></textarea>
+            <button type="submit">Submit Suggestion</button>
+        </form>
+    </section>
+
+    <!-- Upcoming Movies Section -->
+    <section id="upcoming" class="upcoming">
+        <h2>Upcoming Movies</h2>
+        <p>Stay tuned for the latest movies from The Vako Boyz! Check back here for updates.</p>
+        <!-- Example of an upcoming movie entry -->
+        <div class="movie">
+            <h3>Movie Title</h3>
+            <p>Description of the movie goes here...</p>
+            <img src="movie-poster.jpg" alt="Movie Poster" style="width:100%;max-width:400px;">
+            <video controls width="400">
+                <source src="movie-trailer.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Members-Only Content Section -->
+    <section id="members-only" class="members-only">
+        <h2>Exclusive Uncensored Cuts</h2>
+        <p>This section is for YouTube members only. Enter your access code to proceed.</p>
+        <form>
+            <label for="code">Access Code</label>
+            <input type="password" id="code" name="code" required>
+            <button type="submit">Access Content</button>
+        </form>
+    </section>
+</div>
+
+</body>
+</html>
